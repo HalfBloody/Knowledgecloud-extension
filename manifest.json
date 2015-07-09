@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "KnowledgeCloud",
+  "description": "This extension adds the current url to the KnowledgeCloud",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://localhost/*"
+  ]
+}

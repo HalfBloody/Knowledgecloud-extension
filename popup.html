@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>KnowledgeCloud</title>
+
+    <!-- JQuery -->
+    <script src="thirdparty/jquery/jquery-2.1.4.min.js"></script>
+
+    <!-- Twitter Bootstrap -->
+    <link rel="stylesheet" href="thirdparty/bootstrap/css/bootstrap.css">
+    <script src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="popup.js"></script>
+
+    <style type="text/css">
+      .bs-example{
+    	  width: 200px;
+        margin: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="bs-example">
+    <form>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputDescription">Description</label>
+            <input type="text" class="form-control" id="inputDescription" placeholder="Description">
+        </div>
+        <div class="form-group">
+            <label for="inputTags">Tags</label>
+            <input type="text" class="form-control" id="inputTags" placeholder="Tags (separated by comma)">
+        </div>
+        <button type="submit" class="btn btn-primary" id="buttonSubmit">Save</button>
+    </form>
+    </div>
+  </body>
+</html>
